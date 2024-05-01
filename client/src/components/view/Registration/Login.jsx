@@ -92,6 +92,8 @@ const Login = ({setLoggedIn}) => {
           } else {
               console.error('Login failed');
           }
+        }else{
+          toast.error("OTP Mismatched!");
         }
       } catch (error) {
           console.log("Error While Login:-->", error);
